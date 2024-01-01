@@ -23,7 +23,9 @@ app.use('/api/v1/recommend',recmnd)
 app.use('/api/v1/jobs',jobs)
 app.use('/api/v1/reviews',reviews)
 
-
+app.get("/", (req, res) =>{
+  res.status(200).send("Hello Backend")
+})
 
 //connect mongodb
 mongoose.set("strictQuery", false);
