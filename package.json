@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "index.js"
+    "test": "nodemon --exec \"mocha -R min\""
   },
   "author": "",
   "license": "ISC",
