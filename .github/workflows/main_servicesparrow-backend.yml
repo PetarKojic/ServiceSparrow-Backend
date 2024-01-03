@@ -28,8 +28,7 @@ jobs:
           npm run test --if-present
           
       - name: Run index.js
-        run: |
-          main: 'index.js'
+        run: 'index.js'
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
