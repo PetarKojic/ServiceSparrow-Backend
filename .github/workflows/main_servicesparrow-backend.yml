@@ -21,12 +21,12 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: npm install, build, test and dev
+      - name: npm install, build, test and start
         run: |
           npm install
+          npm run start
           npm run build --if-present
           npm run test --if-present
-          npm run dev --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
