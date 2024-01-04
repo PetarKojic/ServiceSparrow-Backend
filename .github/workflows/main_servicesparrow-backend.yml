@@ -27,8 +27,8 @@ jobs:
           npm run build --if-present
           npm run test --if-present
           npm start & npx wait-on http://localhost:5000
-            env:
-              CI: "true"
+        env:
+          CI: "true"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
