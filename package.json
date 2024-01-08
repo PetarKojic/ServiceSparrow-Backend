@@ -1,12 +1,12 @@
 {
-  "name": "servicesparrow-backend",
+  "name": "cansahin-project-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "build index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
