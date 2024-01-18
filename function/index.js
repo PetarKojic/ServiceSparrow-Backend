@@ -16,7 +16,7 @@ const sendNewMail = async (email, id) => {
     });
 
     let mailOptions = {
-        from: 'no-reply@devstax.org',
+        from: 'helpdesk.servicesparrow@gmail.com',
         to: email,
         subject: 'Passwort zurücksetzen',
         html: `<div>
@@ -80,21 +80,19 @@ const sendOTPEmail = async (email, otp) => {
         </div>`
     };
 
-   return transporter.sendMail(mailOptions, (error, info) => {
+    return transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error.message)
-            return 0;
+            return 0
         }
         else {
             console.log("success")
-
             return 1
         }
     });
-
-
-
 }
+
+
 function makeid(length) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
